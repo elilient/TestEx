@@ -1,6 +1,6 @@
-const Client = require("../models/client");
-const User = require("../models/user");
-const jwt = require("jsonwebtoken");
+const Client = require('../models/client');
+const User = require('../models/user');
+const jwt = require('jsonwebtoken');
 
 module.exports = {
     async clientCreate(req, res, next) {

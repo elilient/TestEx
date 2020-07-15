@@ -12,7 +12,7 @@ var clientRouter = require('./routes/client');
 var app = express();
 
 // Connect database
-mongoose.connect("mongodb://localhost:27017/booking", { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex:true });
+mongoose.connect('mongodb://localhost:27017/booking', { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex:true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {

@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const ClientSchema = new Schema({
@@ -9,4 +9,4 @@ const ClientSchema = new Schema({
     telnumber: Number,
     distributor_id: Schema.Types.Number
 });
-module.exports = mongoose.model("Client", ClientSchema);
+module.exports = mongoose.model('Client', ClientSchema);
